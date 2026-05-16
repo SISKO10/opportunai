@@ -1,0 +1,29 @@
+# Environnement virtuel
+env/
+
+# Variables sensibles
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+*.log
+db.sqlite3
+/static/
+/media/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Migrations (optionnel)
+# opportunities/migrations/
+
+# Settings de production
+config/settings/production.py
