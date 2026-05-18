@@ -125,3 +125,40 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+# Configuration Celery
+# Redis comme broker (file d'attente des tâches)
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+
+# Redis comme backend (stockage des résultats)
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
+# Format des tâches
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+# Fuseau horaire
+CELERY_TIMEZONE = 'Africa/Abidjan'
+
+# Planification automatique des tâches
+from celery.schedules import crontab
+CELERY_BEAT_SCHEDULE = {
+
+    # Scraping toutes les 6 heures
+    'scraping-toutes-les-6-heures': {
+        'task': 'agents.tasks.lancer_scraping',
+        'schedule': crontab(minute=0, hour='*/6'),
+    },
+
+    # Analyse IA toutes les 6 heures
+    'analyse-ia-toutes-les-6-heures': {
+        'task': 'agents.tasks.analyser_opportunites',
+        'schedule': crontab(minute=30, hour='*/6'),
+    },
+}
+
+
+#Cle api grop
+GROQ_API_KEY = config('GROQ_API_KEY')
