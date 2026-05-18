@@ -138,6 +138,10 @@ class Opportunity(models.Model):
     # Date d'ajout automatique dans notre BDD
     created_at = models.DateTimeField(auto_now_add=True)
 
+    # Nom de l'entreprise qui recrute
+    # blank=True : pas toujours disponible
+    company = models.CharField(max_length=200, blank=True)
+
     # Affiche le titre au lieu de "Opportunity object (1)"
     def __str__(self):
         return self.title
