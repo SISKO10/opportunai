@@ -14,7 +14,7 @@ from pathlib import Path
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     #Bibliotheaue
     'rest_framework',
+    'django_htmx',
 
     #Nos applications
     'opportunities',
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_htmx.middleware.HtmxMiddleware', 
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -64,7 +66,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,8 +126,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+# Fichiers statiques
+STATIC_URL = '/static/'
+# Dossier des fichiers statiques en développement
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
+# Dossier de collecte en production
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Configuration Celery
 # Redis comme broker (file d'attente des tâches)

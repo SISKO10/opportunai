@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block title %}Opportunités - OPPORTUN'AI{% endblock %}
+
+{% block content %}
+
+<!-- TITRE -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h1 class="fw-bold">
+            💼 Opportunités
+            <span class="badge bg-secondary fs-6">
+                {{ total }}
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!-- FILTRES -->
+<div class="card p-3 mb-4">
+    <form method="GET" action="/opportunites/">
+        <div class="row g-3">
+
+            <!-- Recherche par mot clé -->
+            <div class="col-md-4">
+                <input
+                    type="text"
+                    name="search"
+                    class="form-control"
+                    placeholder="🔍 Rechercher..."
+                    value="{{ search }}"
+                >
+            </div>
+
+            <!-- Filtre par type -->
+            <div class="col-md-3">
+                <select name="type" class="form-select">
+                    <option value="">Tous les types</option>
+                    <option value="emploi"
+                        {% if type_filtre == 'emploi' %}selected{% endif %}>
+                        Emploi
+                    </option>
+                    <option value="business"
+                        {% if type_filtre == 'business' %}selected{% endif %}>
+                        Business
+                    </option>
+                    <option value="formation"
+                        {% if type_filtre == 'formation' %}selected{% endif %}>
+                        Formation
+                    </option>
+                    <option value="appel_offre"
+                        {% if type_filtre == 'appel_offre' %}selected{% endif %}>
+                        Appel d'offre
+                    </option>
+                </select>
+            </div>
+
+            <!-- Filtre par pays -->
+            <div class="col-md-3">
+                <select name="country" class="form-select">
+                    <option value="">Tous les pays</option>
+                    <option value="ci"
+                        {% if country_filtre == 'ci' %}selected{% endif %}>
+                        Côte d'Ivoire
+                    </option>
+                    <option value="sn"
+                        {% if country_filtre == 'sn' %}selected{% endif %}>
+                        Sénégal
+                    </option>
+                    <option value="ml"
+                        {% if country_filtre == 'ml' %}selected{% endif %}>
+                        Mali
+                    </option>
+                    <option value="bf"
+                        {% if country_filtre == 'bf' %}selected{% endif %}>
+                        Burkina Faso
+                    </option>
+                </select>
+            </div>
+
+            <!-- Bouton filtrer -->
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-dark w-100">
+                    Filtrer
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<!-- LISTE DES OPPORTUNITÉS -->
+<div class="row">
+    {% for opportunite in opportunites %}
+    <div class="col-md-6 mb-3">
+        <div class="card carte-opportunite p-3">
+
+            <!-- Titre + score -->
+            <div class="d-flex justify-content-between align-items-start">
+                <h5 class="fw-bold mb-1">
+                    <a href="/opportunites/{{ opportunite.id }}/"
+                       class="text-decoration-none text-dark">
+                        {{ opportunite.title }}
+                    </a>
+                </h5>
+                {% if opportunite.score > 0 %}
+                <span class="badge bg-success badge-score">
+                    ⭐ {{ opportunite.score }}/10
+                </span>
+                {% endif %}
+            </div>
+
+            <!-- Entreprise -->
+            {% if opportunite.company %}
+            <p class="text-muted mb-1 small">
+                <i class="bi bi-building"></i>
+                {{ opportunite.company }}
+            </p>
+            {% endif %}
+
+            <!-- Résumé IA -->
+            {% if opportunite.summary %}
+            <p class="mb-2 text-secondary small">
+                <i class="bi bi-robot"></i>
+                {{ opportunite.summary }}
+            </p>
+            {% endif %}
+
+            <!-- Badges -->
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="badge bg-primary me-1">
+                        {{ opportunite.get_type_display }}
+                    </span>
+                    <span class="badge bg-secondary">
+                        {{ opportunite.get_country_display }}
+                    </span>
+                </div>
+                {% if opportunite.published_at %}
+                <small class="text-muted">
+                    {{ opportunite.published_at }}
+                </small>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+    {% empty %}
+    <!-- Affiché si aucune opportunité trouvée -->
+    <div class="col-12 text-center py-5">
+        <h4 class="text-muted">
+            😕 Aucune opportunité trouvée
+        </h4>
+        <a href="/opportunites/" class="btn btn-dark mt-3">
+            Réinitialiser les filtres
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

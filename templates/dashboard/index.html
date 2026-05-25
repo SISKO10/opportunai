@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block title %}Accueil - OPPORTUN'AI{% endblock %}
+
+{% block content %}
+
+<!-- TITRE -->
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <h1 class="fw-bold">🌍 OPPORTUN'AI</h1>
+        <p class="text-muted lead">
+            Détection automatique d'opportunités Business et Emploi en Afrique
+        </p>
+    </div>
+</div>
+
+<!-- STATISTIQUES -->
+<div class="row mb-5">
+
+    <!-- Total opportunités -->
+    <div class="col-md-4 mb-3">
+        <div class="card carte-stat text-center p-4">
+            <div class="chiffre">{{ total_opportunites }}</div>
+            <p class="text-muted mb-0">
+                <i class="bi bi-briefcase"></i> Opportunités disponibles
+            </p>
+        </div>
+    </div>
+
+    <!-- Total sources -->
+    <div class="col-md-4 mb-3">
+        <div class="card carte-stat text-center p-4">
+            <div class="chiffre">{{ total_sources }}</div>
+            <p class="text-muted mb-0">
+                <i class="bi bi-globe"></i> Sources scrapées
+            </p>
+        </div>
+    </div>
+
+    <!-- Total catégories -->
+    <div class="col-md-4 mb-3">
+        <div class="card carte-stat text-center p-4">
+            <div class="chiffre">{{ total_categories }}</div>
+            <p class="text-muted mb-0">
+                <i class="bi bi-tag"></i> Catégories
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- MEILLEURES OPPORTUNITÉS -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="fw-bold mb-3">
+            🔥 Meilleures opportunités
+        </h2>
+    </div>
+
+    {% for opportunite in meilleures_opportunites %}
+    <div class="col-md-6 mb-3">
+        <div class="card carte-opportunite p-3">
+
+            <!-- En-tête de la carte -->
+            <div class="d-flex justify-content-between align-items-start">
+                <h5 class="fw-bold mb-1">
+                    <a href="/opportunites/{{ opportunite.id }}/"
+                       class="text-decoration-none text-dark">
+                        {{ opportunite.title }}
+                    </a>
+                </h5>
+
+                <!-- Badge score -->
+                <span class="badge bg-success badge-score">
+                    ⭐ {{ opportunite.score }}/10
+                </span>
+            </div>
+
+            <!-- Entreprise -->
+            {% if opportunite.company %}
+            <p class="text-muted mb-1">
+                <i class="bi bi-building"></i>
+                {{ opportunite.company }}
+            </p>
+            {% endif %}
+
+            <!-- Résumé IA -->
+            {% if opportunite.summary %}
+            <p class="mb-2 text-secondary">
+                <i class="bi bi-robot"></i>
+                {{ opportunite.summary }}
+            </p>
+            {% endif %}
+
+            <!-- Badges type et pays -->
+            <div>
+                <span class="badge bg-primary me-1">
+                    {{ opportunite.get_type_display }}
+                </span>
+                <span class="badge bg-secondary">
+                    {{ opportunite.get_country_display }}
+                </span>
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+<!-- OPPORTUNITÉS RÉCENTES -->
+<div class="row mb-4">
+    <div class="col-12 d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold">
+            🕐 Opportunités récentes
+        </h2>
+        <a href="/opportunites/" class="btn btn-outline-dark">
+            Voir toutes →
+        </a>
+    </div>
+
+    {% for opportunite in opportunites_recentes %}
+    <div class="col-md-6 mb-3">
+        <div class="card carte-opportunite p-3">
+
+            <div class="d-flex justify-content-between">
+                <h6 class="fw-bold mb-1">
+                    <a href="/opportunites/{{ opportunite.id }}/"
+                       class="text-decoration-none text-dark">
+                        {{ opportunite.title }}
+                    </a>
+                </h6>
+                <span class="badge bg-success badge-score">
+                    ⭐ {{ opportunite.score }}/10
+                </span>
+            </div>
+
+            {% if opportunite.company %}
+            <p class="text-muted mb-1 small">
+                <i class="bi bi-building"></i>
+                {{ opportunite.company }}
+            </p>
+            {% endif %}
+
+            <div>
+                <span class="badge bg-primary me-1">
+                    {{ opportunite.get_type_display }}
+                </span>
+                <span class="badge bg-secondary">
+                    {{ opportunite.get_country_display }}
+                </span>
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+

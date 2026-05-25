@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ opportunite.title }} - OPPORTUN'AI{% endblock %}
+
+{% block content %}
+
+<!-- BOUTON RETOUR -->
+<div class="mb-3">
+    <a href="/opportunites/" class="btn btn-outline-dark">
+        ← Retour aux opportunités
+    </a>
+</div>
+
+<!-- DÉTAIL DE L'OPPORTUNITÉ -->
+<div class="card carte-opportunite p-4">
+
+    <!-- En-tête -->
+    <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+            <h1 class="fw-bold">{{ opportunite.title }}</h1>
+            {% if opportunite.company %}
+            <h5 class="text-muted">
+                <i class="bi bi-building"></i>
+                {{ opportunite.company }}
+            </h5>
+            {% endif %}
+        </div>
+
+        {% if opportunite.score > 0 %}
+        <div class="text-center">
+            <span class="badge bg-success fs-4 p-3">
+                ⭐ {{ opportunite.score }}/10
+            </span>
+            <p class="text-muted small mt-1">Score IA</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Badges -->
+    <div class="mb-3">
+        <span class="badge bg-primary me-1 fs-6">
+            {{ opportunite.get_type_display }}
+        </span>
+        <span class="badge bg-secondary me-1 fs-6">
+            {{ opportunite.get_country_display }}
+        </span>
+        {% if opportunite.salary %}
+        <span class="badge bg-warning text-dark fs-6">
+            💰 {{ opportunite.salary }}
+        </span>
+        {% endif %}
+    </div>
+
+    <!-- Résumé IA -->
+    {% if opportunite.summary %}
+    <div class="alert alert-info mb-3">
+        <h5>🤖 Résumé généré par IA</h5>
+        <p class="mb-0">{{ opportunite.summary }}</p>
+    </div>
+    {% endif %}
+
+    <!-- Description complète -->
+    <div class="mb-4">
+        <h4 class="fw-bold">📋 Description</h4>
+        <p>{{ opportunite.description }}</p>
+    </div>
+
+    <!-- Source -->
+    {% if opportunite.source %}
+    <div class="mb-3 text-muted small">
+        <i class="bi bi-globe"></i>
+        Source : {{ opportunite.source.name }}
+    </div>
+    {% endif %}
+
+    <!-- Date -->
+    {% if opportunite.published_at %}
+    <div class="mb-3 text-muted small">
+        <i class="bi bi-calendar"></i>
+        Publié le : {{ opportunite.published_at }}
+    </div>
+    {% endif %}
+
+    <!-- Bouton voir l'offre originale -->
+    {% if opportunite.url %}
+    <a href="{{ opportunite.url }}"
+       target="_blank"
+       class="btn btn-dark btn-lg">
+        Voir l'offre originale →
+    </a>
+    {% endif %}
+
+</div>
+
+{% endblock %}
