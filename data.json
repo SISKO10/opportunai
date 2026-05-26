@@ -1,0 +1,1020 @@
+[
+{
+  "model": "opportunities.category",
+  "pk": 1,
+  "fields": {
+    "name": "Emploi",
+    "created_at": "2026-05-16T12:39:24.640Z"
+  }
+},
+{
+  "model": "opportunities.source",
+  "pk": 1,
+  "fields": {
+    "name": "Emploi.ci",
+    "url": "https://emploi.ci",
+    "is_active": true,
+    "created_at": "2026-05-16T12:40:57.387Z"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 1,
+  "fields": {
+    "title": "Assistant Contrôle de Gestion - Abidjan",
+    "description": "Nous sommes à la recherche d'un  Assistant Contrôle de Gestion.    Missions principales :    Appuyer le Service Contrôle de Gestion dans la collecte, le traitement et l’analyse des données chiffrées de l’entreprise  Participer à la production des tableaux de bord, au suivi des indicateurs de performance (KPI) et à l’élaboration des budgets afin de garantir l’optimisation de la rentabilité de l’organisation    Détails des activités:    Participer au renforcement du dispositif de contrôle de gestion  Participer aux travaux de clôture comptable mensuels et annuels  Participer à la réalisation et au suivi des inventaires ponctuels et de fin de période  Participer à l'élaboration du budget...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/assistant-controle-gestion-abidjan-1946394",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Bernabe Ci recherche un Assistant Contrôle de Gestion pour appuyer le service de contrôle de gestion dans la collecte et l'analyse des données de l'entreprise. Le candidat devra participer à la production de tableaux de bord, au suivi des indicateurs de performance et à l'élaboration des budgets. L'objectif est d'optimiser la rentabilité de l'organisation basée à Abidjan.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.686Z",
+    "company": "Bernabe Ci"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 2,
+  "fields": {
+    "title": "Commercial - Abidjan",
+    "description": "Nous sommes à la recherche d'un  Commercial.    Missions :    Développer le portefeuille clients de l’entreprise ;  Identifier de nouvelles opportunités commerciales et assurer la prospection ;  Promouvoir les services de sécurité privée et fidéliser les clients existants ;  Réaliser les négociations et conclure des contrats ;  Établir des rapports réguliers sur l’activité commerciale ;  Atteindre les objectifs fixés par la Direction ;",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/commercial-abidjan-1756304",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Ss-Securite Privee recherche un commercial pour développer son portefeuille clients et promouvoir ses services de sécurité privée à Abidjan. Le candidat retenu devra identifier de nouvelles opportunités commerciales, négocier des contrats et atteindre les objectifs fixés par la direction. Les tâches incluent la prospection, la fidélisation des clients existants et la réalisation de rapports réguliers sur l'activité commerciale.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.702Z",
+    "company": "Ss-Securite Privee"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 3,
+  "fields": {
+    "title": "Stagiaire Commercial en Ligne - Abidjan",
+    "description": "Nous sommes à la recherche des  Stagiaires Commerciaux en Ligne.   Accompagner le développement commercial digital de l’entreprise par la prospection en ligne et la création de contenus attractifs, tout en formant le stagiaire aux techniques de vente et de communication digitale.   Missions confiées :     Identifier des prospects sur les réseaux sociaux, forums et annuaires professionnels(prospection en ligne)    Rédiger des messages d’approche et des scripts de relance.    Créer des visuels et contenus courts (posts, stories, vidéos) pour promouvoir les offres.    Participer à l’élaboration de campagnes de prospection ciblées.    Suivre les interactions et mettre à jour les bases de données clients...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/stagiaire-commercial-ligne-abidjan-1757503",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Holly Trans Limited recherche un stagiaire commercial en ligne basé à Abidjan pour accompagner son développement commercial digital. Le stagiaire sera chargé de prospecter des clients en ligne, créer des contenus attractifs et développer ses compétences en vente et communication digitale. Les missions incluent la prospection sur les réseaux sociaux, la rédaction de messages d'approche et la création de visuels.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.706Z",
+    "company": "Holly Trans Limited"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 4,
+  "fields": {
+    "title": "Développeur Web (React, JavaScript) - Yamoussoukro",
+    "description": "Nous sommes à la recherche d'un  Développeur Web (React, JavaScript).    Missions :    Concevoir, développer et maintenir des applications web et mobiles performantes, ergonomiques et sécurisées.  Adapter les fonctionnalités aux besoins spécifiques des utilisateurs et aux contraintes des différentes plateformes (smartphones, tablettes, ordinateurs).  Participer à l’analyse fonctionnelle et technique des projets en collaboration avec les équipes métiers et design.  Assurer l’intégration des API et la connexion avec les bases de données.  Effectuer les tests unitaires et fonctionnels pour garantir la qualité et la fiabilité des applications.  Optimiser les performances, l’accessibilité et l’...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/developpeur-web-react-javascript-yamoussoukro-1767131",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise cherche un Développeur Web expérimenté en React et JavaScript pour concevoir, développer et maintenir des applications web et mobiles performantes. Le candidat idéal participera à l'analyse fonctionnelle et technique des projets et assurera l'intégration des API. Le poste est basé à Yamoussoukro.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.712Z",
+    "company": ""
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 5,
+  "fields": {
+    "title": "Assistante de Direction - Abidjan",
+    "description": "Nous sommes à la recherche d'une  Assistante de Direction.    Responsabilités principales    Gestion administrative : Organisation de l’agenda, des réunions, de la correspondance et des documents nécessaires à la direction.  Coordination interne et externe : Assurer l’interface entre la Direction et les parties prenantes internes et externes.  Support stratégique : Préparation des dossiers confidentiels, gestion des informations sensibles et assistance aux prises de décision.  Gestion des déplacements : Organisation des voyages, réservations, et logistique.  Rédaction de rapports : Préparation de rapports et de présentations pour la Direction.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/assistante-direction-abidjan-1773705",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Abt-Vision recherche une Assistante de Direction pour gérer les tâches administratives, coordonner les relations internes et externes et fournir un support stratégique à la direction. Les responsabilités incluent l'organisation de l'agenda, la gestion de la correspondance et des documents confidentiels. L'assistante de direction travaillera en étroite collaboration avec la direction pour prendre des décisions éclairées.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.716Z",
+    "company": "Abt-Vision"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 6,
+  "fields": {
+    "title": "Commerciale - Abidjan",
+    "description": "Nous sommes à la recherche des  Commerciales  en charge de l'accueil et aussi des prospection terrain  qui ont le permis de conduire et qui savent très bien conduire.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/commerciale-abidjan-1789464",
+    "salary": "",
+    "score": 6.0,
+    "summary": "L'entreprise Dkm.construction cherche des commerciales pour l'accueil et la prospection terrain à Abidjan. Les candidats doivent avoir un permis de conduire et de bonnes compétences en conduite. Le poste nécessite une présence sur le terrain pour la prospection.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.721Z",
+    "company": "Dkm.construction"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 7,
+  "fields": {
+    "title": "Coursier - Abidjan",
+    "description": "Entreprise spécialisée dans la livraison des plis , cherche des  Coursiers  sérieux, dynamiques et motivés  pour ses activités à Abidjan.   Mission principale     Assurer la réalisation des courses administratives, la livraison de documents  que le soutien logistique aux différentes activités de l’entreprise, dans le respect des délais, de la confidentialité et des consignes reçues.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/coursier-abidjan-1810807",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Coursier cherche des coursiers pour ses activités à Abidjan. Les candidats doivent être sérieux, dynamiques et motivés pour assurer la livraison de documents et le soutien logistique. La mission principale consiste à réaliser des courses administratives et des livraisons dans le respect des délais et de la confidentialité.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.725Z",
+    "company": "Coursier"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 8,
+  "fields": {
+    "title": "Agent(e) D´Entretien - Abidjan",
+    "description": "Vous aimez faire partie d'une équipe dynamique dont le but est d'assurer la propreté, la sécurité et l'entretien de notre centre, conditions essentielles au bien-être et au confort de nos clients? Nous recherchons une personne débrouillarde, autonome, polyvalente avec un sens de l'organisation exemplaire et sans oublier une attitude extra positive !!   Responsabilités :    Nettoyer et désinfecter les lieux publics (corridors, halls, cages d'escaliers, douche)  Balayer, laver, essuyer les planchers  Épousseter les meubles  Ramasser et vider les poubelles  Nettoyer, désinfecter les salles de toilettes  Refaire le plein de produits d'accueil et d'hygiène etc.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/agente-entretien-abidjan-1858616",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Gastro Adexec Inc. recherche un agent d'entretien pour son centre à Abidjan. Le candidat idéal doit être débrouillard, autonome et avoir un sens de l'organisation exemplaire pour assurer la propreté et la sécurité du centre. Les responsabilités incluent le nettoyage et la désinfection des lieux publics, ainsi que le balayage, lavage et essuyage des planches.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.730Z",
+    "company": "Gastro Adexec Inc."
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 9,
+  "fields": {
+    "title": "Ingénieur Réseau et Sécurité - Abidjan",
+    "description": "Nous sommes à la recherche d'un  Ingénieur Réseau et Sécurité.    Missions :     Concevoir, déployer et maintenir les infrastructures réseaux (LAN, WAN, WLAN)    Configurer et administrer les équipements (routeurs, switches, firewalls)    Mettre en œuvre des solutions de sécurité (Firewall, VPN, IDS/IPS, segmentation réseau)    Assurer la supervision et la gestion des incidents réseau et sécurité    Réaliser des audits techniques et proposer des améliorations    Participer aux projets d’intégration et de transformation digitale    Rédiger la documentation technique et les rapports d’intervention",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/ingenieur-reseau-securite-abidjan-1878075",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Netcyber.consulting cherche un Ingénieur Réseau et Sécurité pour concevoir, déployer et maintenir les infrastructures réseaux et mettre en œuvre des solutions de sécurité. Le candidat sélectionné devra configurer et administrer les équipements réseau, ainsi que superviser et gérer les incidents réseau et sécurité. Ce poste nécessite des compétences techniques pour assurer la sécurité et la fiabilité des réseaux.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.735Z",
+    "company": "Netcyber.consulting"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 10,
+  "fields": {
+    "title": "Dessinateur Projeteur Senior Travaux Publics - Abidjan PK24",
+    "description": "Nous sommes à la recherche d'un  Dessinateur Projeteur Senior Travaux Publics.    Missions :     Élaborer et produire les  plans d’exécution TP  : routes, VRD, terrassements, réseaux divers, ouvrages de drainage    Réaliser les  profils en long et en travers , cubatures et métrés graphiques    Mettre à jour les plans selon les  contraintes terrain et modifications chantier     Appuyer techniquement les équipes travaux et méthodes    Vérifier la cohérence technique des plans avant diffusion chantier    Participer aux réunions techniques avec ingénieurs et conducteurs de travaux    Encadrer et accompagner les dessinateurs juniors si nécessaire",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/dessinateur-projeteur-senior-travaux-publics-abidjan-pk24-1881243",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Batifutur Sarl recherche un Dessinateur Projeteur Senior Travaux Publics à Abidjan pour élaborer et produire des plans d'exécution pour des projets de travaux publics. Le candidat selected devra réaliser des profils en long et en travers, des cubatures et des métrés graphiques, ainsi que mettre à jour les plans en fonction des contraintes de terrain. L'objectif est de soutenir techniquement les équipes de travaux et de méthodes.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.738Z",
+    "company": "Batifutur Sarl"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 11,
+  "fields": {
+    "title": "Test Manager - Abidjan",
+    "description": "TestPro est un leader dans la formation certifiante en tests logiciels et en ingénierie des exigences (ISTQB, IQBBA, IREB). Nous formons des professionnels pour répondre aux besoins croissants du marché technologique en Afrique et à l’international, en fournissant des équipes de testeurs experts pour accompagner vos projets tout au long du cycle de vie du développement logiciel.   Objectif du Poste   Le Test Manager est responsable de la planification, de l'organisation et de la gestion du processus de test au sein des projets. Il assure que les normes de qualité sont respectées tout en coordonnant les efforts des testeurs et des parties prenantes.   Responsabilités Principales    Élaborer et mettre en œuvre la...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/test-manager-abidjan-1888672",
+    "salary": "",
+    "score": 8.0,
+    "summary": "TestPro recherche un Test Manager pour gérer la planification, l'organisation et la gestion des processus de test logiciel. Le candidat idéal sera responsable d'accompagner les projets tout au long du cycle de vie du développement logiciel. L'entreprise est spécialisée dans la formation certifiante en tests logiciels et en ingénierie des exigences.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.744Z",
+    "company": "Testpro"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 12,
+  "fields": {
+    "title": "Livreur  - Abidjan",
+    "description": "Nous recherchons 15  Livreurs  à moto dynamiques et motivés pour rejoindre notre équipe de livraison. En tant que livreur à moto, vous jouerez un rôle essentiel dans notre service de livraison rapide et efficace à nos clients. Si vous êtes passionné par la conduite et que vous avez un excellent sens de l’orientation, ce poste est fait pour vous.   Responsabilités principales :    Livrer des colis et des commandes chez nos clients dans les délais impartis.  Planifier et optimiser les itinéraires de livraison.  Assurer un excellent service client en représentant l’entreprise de manière professionnelle.  Maintenir votre véhicule en bon état de fonctionnement et signaler tout problème mécanique.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/livreur-abidjan-1894220",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Yad Conseil Rh cherche à recruter 15 livreurs à moto pour rejoindre leur équipe de livraison à Abidjan. Les candidats doivent être dynamiques, motivés et avoir un excellent sens de l'orientation. Leur rôle consistera à livrer des colis et des commandes chez les clients dans les délais impartis.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.750Z",
+    "company": "Yad Conseil Rh"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 13,
+  "fields": {
+    "title": "Téléconseiller(ère) en Collecte de Fonds - Abidjan",
+    "description": "Nous sommes à la recherche d'un(e)  Téléconseiller(ère) en Collecte de Fonds.   Le/La Téléconseiller(ère) en Collecte de Fonds est chargé(e) de promouvoir, par téléphone, les actions et projets d’une organisation (ONG, association, fondation) afin de mobiliser des ressources financières auprès de donateurs potentiels.  Ce poste demande une bonne aisance au téléphone, un sens de la persuasion, de l’écoute et de la motivation, car il s’agit de convaincre tout en créant une relation de confiance avec les donateurs.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/teleconseillerere-collecte-fonds-abidjan-1894513",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'Olsy Group cherche un Téléconseiller(ère) en Collecte de Fonds pour promouvoir des actions et projets d'une organisation par téléphone. Le candidat idéal devra avoir une bonne aisance au téléphone, un sens de la persuasion et de l'écoute. Le but est de mobiliser des ressources financières auprès de donateurs potentiels en créant une relation de confiance.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.755Z",
+    "company": "Olsy Group"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 14,
+  "fields": {
+    "title": "Stagiaire Chargée d´Affaires - Abidjan",
+    "description": "Brainfield Consulting  est un cabinet de conseil spécialisé dans l’accompagnement des entreprises en comptabilité, fiscalité, analyse financière et droit des affaires.  Dans le cadre du développement de ses activités, Brainfield Consulting recrute  des Stagiaires Chargées d'Affaires  dynamiques et ambitieux.   Missions :   Sous la supervision du responsable marketing et développement, vous serez chargé(e) de :   Identifier et prospecter de nouvelles entreprises clientes  Présenter les services du cabinet aux prospects  Obtenir des rendez-vous avec des dirigeants d’entreprises  Participer au développement du portefeuille clients  Assurer le suivi et la relance des prospects",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/stagiaire-chargee-affaires-abidjan-1894540",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le Groupe Tasnim, via Brainfield Consulting, cherche un stagiaire chargé d'affaires pour identifier et prospector de nouvelles entreprises clientes à Abidjan. Le stagiaire travaillera sous la supervision du responsable marketing et développement pour présenter les services de l'entreprise. Cette opportunité est idéale pour les personnes dynamiques et ambitieuses cherchant à se lancer dans une carrière dans le domaine des affaires.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.760Z",
+    "company": "Groupe Tasnim"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 15,
+  "fields": {
+    "title": "Agent de Sécurité (H/F) - Abidjan",
+    "description": "Dans le cadre du renforcement de nos équipes, Tropic Group Security recrute  Agents de Sécurité (H/F).    Missions :    Surveillance et contrôle d’accès  Rondes de sécurité  Veille au respect des consignes",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/agent-securite-hf-abidjan-1894563",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Tropic Group Security recherche des agents de sécurité pour renforcer ses équipes à Abidjan. Les missions principales incluent la surveillance, le contrôle d'accès, les rondes de sécurité et le respect des consignes. Il s'agit d'un poste polyvalent nécessitant une attention particulière à la sécurité et à la discipline.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.766Z",
+    "company": "Tropic Group Securyty"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 16,
+  "fields": {
+    "title": "Chargé de Communication Digital - Abidjan",
+    "description": "Le Cabinet CAMAD cherche pour l'un de ses clients :  Chargé de Communication Digital.     Missions principales    Le Chargé de Communication est responsable de la conception, de la mise en œuvre et du suivi des actions de communication externe de l’entreprise.  Il/elle veille à la visibilité, la notoriété et la cohérence de l’image de l’entreprise à travers tous les canaux de communication.    Responsabilités et taches     Développer et mettre en œuvre des plans de communication alignés sur les objectifs de l’entreprise.  Concevoir, coordonner et exécuter des campagnes publicitaires et promotionnelles multi-canaux.  Superviser les supports visuels et rédactionnels (articles, vidéos,infographies,...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/charge-communication-digital-abidjan-1894623",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le Cabinet CAMAD cherche un Chargé de Communication Digital pour l'un de ses clients à Abidjan. Le chargé de communication sera responsable de la conception et de la mise en œuvre des actions de communication externe de l'entreprise. Il/elle devra développer des plans de communication pour améliorer la visibilité et la notoriété de l'entreprise.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.770Z",
+    "company": "Cabinet Camad"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 17,
+  "fields": {
+    "title": "Assistant Comptable - Abidjan Anyama Agoussi",
+    "description": "Nous sommes à la recherche d'un  Assistant Comptable.   ‎L’assistant comptable est chargé d’appuyer la gestion comptable, fiscale et administrative de l’entreprise. Il intervient dans la collecte, le traitement et la vérification des informations financières, sous la supervision du responsable comptable.   ‎Il contribue à la fiabilité des données comptables et au respect des obligations légales, tout en assurant un suivi rigoureux des opérations courantes.  ‎Dans ce cadre, ses principales missions sont les suivantes :   ‎Assurer la saisie et le contrôle des opérations comptables (achats, ventes, banque, caisse) ;  ‎Tenir à jour les journaux comptables et les livres auxiliaires...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/assistant-comptable-abidjan-anyama-agoussi-1894746",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise O'lits recherche un Assistant Comptable pour appuyer la gestion comptable, fiscale et administrative de l'entreprise. Le candidat sera chargé de collecter, traiter et vérifier des informations financières sous la supervision du responsable comptable. Le but est d'assurer la fiabilité des données comptables et le respect des obligations légales.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.775Z",
+    "company": "O'lits"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 18,
+  "fields": {
+    "title": "Responsable Atelier Abattage Volaille - Adiaké",
+    "description": "Nous sommes à la recherche d'un  Responsable Atelier Abattage Volaille.    Missions :    Chargé de la supervision des équipes et de l'abattoir des volailles avec une plumeuse.  Veiller à la bonne exécution des opérations d'abattage dans les respect des règles d'hygiène et de qualité.  Assurer le contrôle régulier des équipements d'abattage   Poste basé à Adiaké. Possibilité de logement sur site.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/responsable-atelier-abattage-volaille-adiake-1895239",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Cibs recherche un Responsable Atelier Abattage Volaille pour superviser les équipes et l'abattoir des volailles à Adiaké. Le responsable doit veiller à la bonne exécution des opérations d'abattage en respectant les règles d'hygiène et de qualité. Le poste offre la possibilité de logement sur site.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.781Z",
+    "company": "Cibs"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 19,
+  "fields": {
+    "title": "Technicien BTP Expérimenté - Abidjan",
+    "description": "La société MEEREO PROJECT recherche un  Technicien BTP Expérimenté  afin l’accompagner dans le développement de ses activités.  Le candidat interviendra sur le suivi opérationnel des chantiers, la coordination des équipes et le contrôle de la qualité des travaux, dans le respect des délais et des exigences techniques.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/technicien-btp-experimente-abidjan-1895280",
+    "salary": "",
+    "score": 8.0,
+    "summary": "La société MEEREO PROJECT recherche un technicien BTP expérimenté pour accompagner le développement de ses activités. Le candidat sera chargé du suivi opérationnel des chantiers, de la coordination des équipes et du contrôle de la qualité des travaux. Le but est de respecter les délais et les exigences techniques.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.786Z",
+    "company": "Meereo"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 20,
+  "fields": {
+    "title": "Employé(e) Polyvalent(e) – Cocktails et Décoration - Songon-Kassemblé",
+    "description": "Nous sommes à la recherche d'un(e)  Employé(e) Polyvalent(e) – Cocktails et Décoration.    Missions principales :     Préparer et servir des cocktails    Participer à la décoration des espaces selon les événements    Veiller à la propreté et à la bonne présentation du lieu    Offrir un bon accueil aux clients    Contribuer à créer une ambiance agréable et professionnelle",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/employee-polyvalente-cocktails-decoration-songon-kassemble-1895414",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'hôtel Le Vent Dusud à Songon-Kassemblé recherche un employé polyvalent pour préparer et servir des cocktails, décorer les espaces et accueillir les clients. Les missions incluent également la propreté et la présentation du lieu, ainsi que la création d'une ambiance agréable. L'employé devra offrir un service de qualité et contribuer à la satisfaction des clients.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.792Z",
+    "company": "Hôtel Le Vent Dusud"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 21,
+  "fields": {
+    "title": "CTO / Directeur des Systèmes D’Information (DSI)  - Abidjan",
+    "description": "MISSION PRINCIPALE    Définir et piloter la stratégie technologique globale de l’entreprise. Garantir l’alignement entre la vision business et l’architecture technique. Représenter la DSI auprès des investisseurs, partenaires étatiques et régulateurs.      RESPONSABILITÉS CLÉS   • Définir la roadmap technologique à 3-5 ans alignée sur la stratégie business.  • Piloter le budget IT global et arbitrer les investissements technologiques.  • Superviser l’ensemble des équipes IT.  • Garantir la conformité réglementaire (PCI-DSS, UEMOA, CEMAC, RDC).  • Représenter l’entreprise lors des audits de Due Diligence et des comités techniques étatiques.  • Piloter les relations...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/cto-directeur-systemes-information-dsi-abidjan-1895557",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le poste de CTO / Directeur des Systèmes D'Information (DSI) chez Africawork à Abidjan consiste à définir et piloter la stratégie technologique globale de l'entreprise. Le candidat retenu devra garantir l'alignement entre la vision business et l'architecture technique, ainsi que représenter la DSI auprès des investisseurs et des partenaires. Les responsabilités clés incluent la définition de la roadmap technologique, la gestion du budget IT et la supervision des équipes IT.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.797Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 22,
+  "fields": {
+    "title": "VP Engineering - Abidjan",
+    "description": "MISSION PRINCIPALE   Piloter l’ensemble des squads Engineering et garantir la qualité, la vélocité et la cohérence technique des développements. Assurer le delivery des produits dans les délais.      RESPONSABILITÉS CLÉS   • Superviser les Tech Leads et coordonner les priorités inter-squads.  • Définir les standards de code, les pratiques de code review et l’architecture applicative.  • Piloter la vélocité de développement et les sprints avec le PMO.  • Gérer les dépendances entre squads.  • Participer aux recrutements techniques et valider les profils Engineering.  • Arbitrer les choix techniques (frameworks, langages, patterns).  • Assurer le mentorat des Tech Leads et...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/vp-engineering-abidjan-1895567",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le poste de VP Engineering à Abidjan chez Africawork consiste à diriger les équipes d'ingénierie et à garantir la qualité des développements. Le responsable pilote les squads, définit les standards de code et assure la livraison des produits dans les délais. Il supervise les Tech Leads, coordonne les priorités et gère les dépendances entre équipes.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.801Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 23,
+  "fields": {
+    "title": "Scrum Master / Agile Coach - Abidjan",
+    "description": "MISSION PRINCIPALE    Faciliter les pratiques agiles au sein des squads Engineering et garantir l’amélioration continue des processus de développement.      RESPONSABILITÉS CLÉS    • Animer les cérémonies agiles (daily, sprint planning, review, retrospective).  • Identifier et lever les impediments qui bloquent les équipes.  • Coacher les squads sur les pratiques Scrum/Kanban.  • Produire les métriques agiles (vélocité, burndown, cycle time).  • Faciliter la communication entre squads et avec le PMO.  • Accompagner la montée en maturité agile de l’organisation.  • Organiser les PI Planning pour les releases multi-squads.      COMPÉTENCES TECHNIQUES    • Frameworks...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/scrum-master-agile-coach-abidjan-1895581",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork recherche un Scrum Master/Agile Coach pour faciliter les pratiques agiles au sein de ses équipes d'ingénierie à Abidjan. Le candidat retenu aura pour mission principale d'améliorer les processus de développement en animant les cérémonies agiles et en identifiant les obstacles qui bloquent les équipes. Il devra également coacher les équipes sur les pratiques Scrum et Kanban.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.807Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 24,
+  "fields": {
+    "title": "Tech Lead - Abidjan",
+    "description": "MISSION PRINCIPALE    Diriger techniquement une squad de développement. Concevoir, développer et maintenir les composants critiques de la plateforme. Garantir la qualité du code et le respect des standards architecturaux.      RESPONSABILITÉS CLÉS    • Concevoir l’architecture technique de la squad (design, modèle de données, API).  • Développer les composants critiques et les fonctionnalités à haute complexité.  • Encadrer techniquement le(s) développeur(s) de la squad (code review, pair programming).  • Garantir la couverture de tests et la qualité du code (SonarQube, tests unitaires/intégration).  • Participer aux choix d’architecture avec l’Architecte Solutions.  •...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/tech-lead-abidjan-1895589",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le poste de Tech Lead à Abidjan consiste à diriger techniquement une équipe de développement et à garantir la qualité du code. Les responsabilités incluent la conception de l'architecture technique, le développement de composants critiques et l'encadrement des développeurs. Le candidat idéal devra avoir des compétences techniques solides et des capacités de leadership.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.812Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 25,
+  "fields": {
+    "title": "QA Lead - Abidjan",
+    "description": "MISSION PRINCIPALE    Définir et piloter la stratégie de qualité logicielle pour l’ensemble de la plateforme. Coordonner l’équipe QA centralisée et garantir la cohérence des critères de qualité across squads.      RESPONSABILITÉS CLÉS    • Définir la stratégie de test globale (niveaux de test, couverture, outils).  • Coordonner les QA Testers et le QA Automation Engineer.  • Définir les critères d’acceptation et les plans de test par release.  • Valider la qualité des livrables avant mise en production.  • Piloter les campagnes de test de non-régression.  • Collaborer avec le PMO pour intégrer le QA dans le cycle de release.  • Produire les rapports de qualité et les...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/qa-lead-abidjan-1895593",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le poste de QA Lead à Abidjan, proposé par Africawork, consiste à définir et à piloter la stratégie de qualité logicielle pour l'ensemble de la plateforme. Le candidat retenu devra coordonner l'équipe QA centralisée et garantir la cohérence des critères de qualité. Il sera également responsable de définir la stratégie de test globale et de valider la qualité des livrables avant mise en production.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:38.818Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 26,
+  "fields": {
+    "title": "QA Tester - Abidjan",
+    "description": "Nous recherchons un  QA Tester  pour effectuer des tests fonctionnels logiciels.   Mission :   Exécuter les tests fonctionnels et de non-régression sur l’ensemble des composants de la plateforme. Garantir la qualité des livrables avant chaque release.      Tâches principales :    Rédiger les cas de test à partir des user stories et des spécifications.  Exécuter les campagnes de test manuelles (fonctionnel, intégration, E2E).  Remonter et documenter les bugs dans l’outil de suivi (Jira).  Valider les corrections de bugs et les retests.  Participer aux sprint reviews pour valider les critères d’acceptation.  Maintenir la base de cas de test à jour.  Effectuer les tests de non-régression avant...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/qa-tester-abidjan-1895595",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork recherche un QA Tester pour effectuer des tests fonctionnels logiciels à Abidjan. Le candidat aura pour mission d'exécuter des tests et de garantir la qualité des livrables avant chaque release. Les tâches principales incluent la rédaction de cas de test, l'exécution de campagnes de test manuelles et la remontée de bugs dans Jira.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.193Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 27,
+  "fields": {
+    "title": "QA Automation Engineer - Abidjan",
+    "description": "MISSION PRINCIPALE    Concevoir et maintenir la suite de tests automatisés couvrant l’ensemble des squads. Réduire le temps de test et garantir la non-régression en continu.      RESPONSABILITÉS CLÉS    • Concevoir le framework d’automatisation de tests (API, UI, E2E).  • Développer et maintenir les scripts de tests automatisés.  • Intégrer les tests dans le pipeline CI/CD.  • Automatiser les tests de non-régression prioritaires.  • Produire les rapports d’exécution automatisés.  • Former les QA Testers aux outils d’automatisation.  • Optimiser le temps d’exécution de la suite de tests.      COMPÉTENCES TECHNIQUES    • Frameworks d’...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/qa-automation-engineer-abidjan-1895597",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork recherche un QA Automation Engineer à Abidjan pour concevoir et maintenir une suite de tests automatisés, réduire le temps de test et garantir la non-régression. Les responsabilités clés incluent la conception d'un framework d'automatisation de tests, le développement de scripts de tests et l'intégration dans le pipeline CI/CD. Le candidat idéal devra également former les équipes QA sur les outils et processus d'automatisation de tests.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.200Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 28,
+  "fields": {
+    "title": "Project Manager Groupe - Abidjan",
+    "description": "MISSION   PRINCIPALE    Gérer les projets transverses et les déploiements multi-pays. Coordonner les équipes siège et locales pour garantir le delivery des engagements contractuels étatiques.      RESPONSABILITÉS CLÉS    • Piloter les projets de déploiement pays (planning, ressources, risques).  • Coordonner les équipes locales avec les squads Engineering.  • Produire les livrables projets (planning, RACI, CR de réunion, reporting).  • Gérer les relations avec les partenaires techniques locaux.  • Suivre les engagements contractuels et les SLA étatiques.  • Organiser les UAT (User Acceptance Testing) avec les clients étatiques.  • Assurer la communication projet entre siège et filiales...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/project-manager-groupe-abidjan-1895603",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le poste de Project Manager Groupe à Abidjan consiste à gérer des projets transverses et des déploiements multi-pays pour l'entreprise Africawork. Les responsabilités incluent la coordination d'équipes, la gestion de risques et la production de livrables. Le candidat idéal devra avoir des compétences en gestion de projet et en coordination d'équipes.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.205Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 29,
+  "fields": {
+    "title": "SRE / Platform Lead  - Abidjan",
+    "description": "MISSION PRINCIPALE   Diriger l’équipe Platform/SRE/DevOps. Garantir la fiabilité, la performance et la scalabilité de l’infrastructure de production multi-pays.      RESPONSABILITÉS CLÉS   • Définir l’architecture d’infrastructure (cloud, on-premise, hybride).  • Piloter les SRE Engineers, DevOps et Cloud/Infra Engineer.  • Garantir les SLA de disponibilité (> 99.95%) et de performance.  • Définir et implémenter la stratégie de monitoring et d’observabilité.  • Piloter les incidents de production et les post-mortems.  • Planifier la capacité et l’évolution de l’infrastructure.  • Assurer la conformité des environnements (sécurité,...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/sre-platform-lead-abidjan-1895608",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le poste de SRE / Platform Lead à Abidjan consiste à diriger l'équipe Platform/SRE/DevOps et à garantir la fiabilité, la performance et la scalabilité de l'infrastructure de production multi-pays. Les responsabilités clés incluent la définition de l'architecture d'infrastructure, la gestion d'équipes techniques et la garantie des niveaux de service (SLA). Le candidat idéal devra avere une expérience en la matière pour diriger et gérer les opérations techniques de l'entreprise.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.212Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 30,
+  "fields": {
+    "title": "SRE Engineer - Abidjan",
+    "description": "MISSION PRINCIPALE    Assurer la fiabilité et la performance des systèmes de production. Monitorer, détecter et résoudre les incidents. Optimiser la résilience de la plateforme.      RESPONSABILITÉS CLÉS    • Monitorer les systèmes de production (dashboards, alertes).  • Intervenir en première ligne sur les incidents de production (P1/P2).  • Réaliser les post-mortems et implémenter les actions correctives.  • Optimiser les performances (latence, throughput, utilisation ressources).  • Implémenter les SLI/SLO et gérer les error budgets.  • Automatiser les tâches opérationnelles récurrentes (toil reduction).  • Participer aux astreintes 24/7 (rotation).      COMPÉTENCES TECHNIQUES...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/sre-engineer-abidjan-1895614",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork cherche un ingénieur SRE pour assurer la fiabilité et la performance de ses systèmes de production à Abidjan. Le candidat sélectionné devra monitorer les systèmes, intervenir en cas d'incidents et optimiser la résilience de la plateforme. Les responsabilités clés incluent la surveillance des systèmes, la résolution d'incidents et l'optimisation des performances.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.217Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 31,
+  "fields": {
+    "title": "Cloud / Infrastructure Engineer  - Abidjan",
+    "description": "MISSION   PRINCIPALE    Concevoir et gérer l’infrastructure cloud et les environnements multi-pays. Optimiser les coûts et garantir la conformité souveraineté des données.      RESPONSABILITÉS CLÉS    • Concevoir l’architecture cloud multi-régions (Afrique de l’Ouest, Afrique Centrale).  • Gérer les comptes cloud, les VPC, le networking inter-régions.  • Implémenter les politiques de sécurité cloud (IAM, encryption, compliance).  • Optimiser les coûts cloud (reserved instances, spot, rightsizing).  • Gérer les solutions d’hébergement souverain si requis par les contrats étatiques.  • Maintenir les backups, la réplication et le disaster recovery.  • Produire les...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/cloud-infrastructure-engineer-abidjan-1895617",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork recherche un ingénieur en infrastructure cloud pour concevoir et gérer son infrastructure cloud et ses environnements multi-pays en Afrique. Le candidat devra concevoir l'architecture cloud multi-régions, gérer les comptes cloud et implémenter les politiques de sécurité cloud. L'optimisation des coûts et la conformité aux exigences de souveraineté des données seront également des priorités.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.222Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 32,
+  "fields": {
+    "title": "DBA (Database Administrator) - Abidjan",
+    "description": "MISSION PRINCIPALE    Administrer les bases de données de production et garantir leur performance, leur intégrité et leur disponibilité. Assurer les sauvegardes et la conformité des données.      RESPONSABILITÉS CLÉS    • Administrer les instances PostgreSQL, MongoDB et Redis en production.  • Optimiser les performances (index, requêtes, configuration).  • Gérer les sauvegardes, la réplication et le failover.  • Planifier les migrations de schéma en coordination avec les squads.  • Monitorer les métriques de base de données (connexions, latence, stockage).  • Assurer la conformité RGPD/données personnelles avec le GRC.  • Gérer le capacity planning des bases de données.   ...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/dba-database-administrator-abidjan-1895622",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork cherche un Administrateur de base de données (DBA) pour gérer et optimiser les performances de leurs bases de données en production. Le candidat retenu devra administrer les instances PostgreSQL, MongoDB et Redis, assurer les sauvegardes et la réplication, ainsi que monitore les performances. L'objectif principal est de garantir la performance, l'intégrité et la disponibilité des bases de données.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.227Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 33,
+  "fields": {
+    "title": "Support HelpDesk IT - Abidjan",
+    "description": "MISSION PRINCIPALE    Assurer le support utilisateur interne pour l’ensemble des collaborateurs IT. Gérer les demandes via un outil de ticketing centralisé.      RESPONSABILITÉS CLÉS    • Gérer les tickets de support utilisateur (postes de travail, accès, logiciels).  • Provisionner les accès systèmes pour les nouveaux arrivants (onboarding IT).  • Gérer les incidents de niveau 1 utilisateur (reset mot de passe, VPN, messagerie).  • Coordonner avec les Ops locaux pour les interventions physiques.  • Maintenir l’inventaire du matériel IT et les licences logicielles.  • Produire les rapports de suivi des tickets (SLA, volumes, tendances).  • Gérer les départs (offboarding...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/support-helpdesk-it-abidjan-1895625",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Africawork recherche un support HelpDesk IT pour gérer les demandes des collaborateurs internes à Abidjan. Le candidat sélectionné assurera le support utilisateur pour les postes de travail, les accès et les logiciels, ainsi que la gestion des incidents de niveau 1. Il travaillera également avec les opérations locales pour les interventions physiques.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.232Z",
+    "company": "Africawork"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 34,
+  "fields": {
+    "title": "Assistante Administrative - Abidjan",
+    "description": "Le cabinet EL EZER recrute pour le compte d’un établissement scolaire une  Assistante Administrative.    Principales missions   Sous la responsabilité de la directrice, l’assistante administrative apporte une aide à la réalisation des différentes tâches administratives de l’école.   Assister la direction d’école dans les tâches  Participer aux travaux de secrétariat (accueil physique, courrier, enquêtes, téléphone, classement des documents, …).  Aider à la constitution de dossiers administratifs à destination des élèves et de leurs familles (par exemple, certificats de scolarité, de radiation, divers formulaires, …).  Assurer la mise en forme des comptes-rendus des conseils d...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/assistante-administrative-abidjan-1896110",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Le cabinet EL EZER recherche une assistante administrative pour un établissement scolaire à Abidjan. L'assistante administrative sera chargée d'aider la direction de l'école dans les tâches administratives et de participer aux travaux de secrétariat. Les missions incluent l'accueil physique, la gestion du courrier, la constitution de dossiers administratifs, entre autres.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.237Z",
+    "company": "Cabinet El Ezer"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 35,
+  "fields": {
+    "title": "Commercial Terrain - Bouaké",
+    "description": "dans le cadre du lancement de sa campagne 2027, la société fl collecte et commerce sarlu recrute des commerciaux terrains dynamiques et ambitieux pour renforcer son équipe.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/commercial-terrain-bouake-1897040",
+    "salary": "",
+    "score": 8.0,
+    "summary": "La société FL Collecte et Commerce Sarlu recrute des commerciaux terrain à Bouaké pour son équipe. Cette opportunité fait partie de leur campagne 2027 et vise à renforcer leur équipe commerciale. Les candidats doivent être dynamiques et ambitieux.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.242Z",
+    "company": "Fl Collecte Et Commerce Sarlu"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 36,
+  "fields": {
+    "title": "Evaluateur Externe de Projet - Bouaké",
+    "description": "Dans le cadre de la mise en œuvre du projet FORM-INC( Formation professionnelle et insertion professionnelle dans les régions du Gbêkê et du Haut-Sassandra / FO RM-INC), l'ong CVCS recherche un consultant pour l'évaluation intermédiaire du projet.   L'évaluation doit prendre en compte :   les objectifs et le type d'initiative ;  les parties prenantes (bénéficiaires, autres parties prenantes, personnel du projet, etc.) ;  le contexte local de l'intervention ;  les ressources disponibles.    Objectifs de l'évaluation externe intermédiaire   Les principaux objectifs de l'évaluation sont les suivants :   vérifier le fonctionnement du réseau du projet (gestion technique et financière,...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/evaluateur-externe-projet-bouake-1897078",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'ONG CVCS cherche un consultant pour évaluer le projet FORM-INC à Bouaké, qui vise à offrir une formation professionnelle et une insertion professionnelle dans les régions du Gbêkê et du Haut-Sassandra. L'évaluateur externe devra prendre en compte les objectifs, les parties prenantes, le contexte local et les ressources disponibles pour réaliser une évaluation intermédiaire du projet. Le but est de mesurer l'efficacité et l'impact du projet pendant sa mise en œuvre.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.247Z",
+    "company": "Cvcs"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 37,
+  "fields": {
+    "title": "Secrétaire Comptable - Abidjan",
+    "description": "Nous recherchons un(e)  Secrétaire Comptable  dynamique et organisé(e) pour rejoindre notre équipe. Ce poste polyvalent combine des tâches administratives et comptables essentielles au bon fonctionnement de notre structure. Le/La titulaire sera un(e) acteur/actrice clé dans la gestion quotidienne de nos opérations, garantissant l'efficacité et la précision de nos processus.  Dans ce rôle, vous serez responsable de la tenue des dossiers administratifs et comptables, de la gestion des communications internes et externes, et du support aux équipes. Une maîtrise parfaite des outils bureautiques et une bonne connaissance des réseaux sociaux seront des atouts majeurs pour réussir dans cet environnement exigeant et stimulant du...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/secretaire-comptable-abidjan-1897417",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Opurivoire cherche un secrétaire comptable pour rejoindre son équipe à Abidjan. Ce poste combine tâches administratives et comptables pour assurer le bon fonctionnement de l'entreprise. Le titulaire sera responsable de la tenue des dossiers et de la gestion des communications.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.252Z",
+    "company": "Opurivoire"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 38,
+  "fields": {
+    "title": "Technicien BTP Expérimenté - Abidjan, Deux-Plateaux Vallon",
+    "description": "La société MEEREO PROJECT recherche un  Technicien BTP Expérimenté  afin l’accompagner dans le développement de ses activités.  Le candidat interviendra sur le suivi opérationnel des chantiers, la coordination des équipes et le contrôle de la qualité des travaux, dans le respect des délais et des exigences techniques.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/technicien-btp-experimente-abidjan-deux-plateaux-vallon-1897516",
+    "salary": "",
+    "score": 8.0,
+    "summary": "La société MEEREO PROJECT cherche un technicien BTP expérimenté pour accompagner son développement à Abidjan. Le candidat sera responsable du suivi opérationnel des chantiers, de la coordination des équipes et du contrôle de la qualité des travaux. L'objectif est de respecter les délais et les exigences techniques pour les différents projets.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.258Z",
+    "company": "Meereo"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 39,
+  "fields": {
+    "title": "Responsable Commercial et Développement - Abidjan",
+    "description": "Vous êtes passionné(e) par le business, le développement commercial et la croissance d’entreprise ? Vous avez le goût du challenge et l’envie de transformer vos efforts en résultats concrets ? Rejoignez-nous pour contribuer activement à la croissance de SIMPLE THREE.  Nous sommes à la recherche d'un  Responsable Commercial et Développement.    Missions principales    Développer et gérer un portefeuille de clients (entreprises, ONG, institutions, écoles privées, particuliers).  Prospecter et identifier de nouvelles opportunités de marché.  Préparer et présenter des offres commerciales attractives.  Négocier et conclure des contrats (formations, services IT, accompagnement digital).  Gérer la communication...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/responsable-commercial-developpement-abidjan-1897605",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Simple Three recherche un Responsable Commercial et Développement pour rejoindre son équipe à Abidjan. Le candidat idéal sera chargé de développer et gérer un portefeuille de clients et de prospecter de nouveaux clients. Le but est de contribuer activement à la croissance de l'entreprise.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.263Z",
+    "company": "Simple Three"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 40,
+  "fields": {
+    "title": "Spécialiste / Ingénieur en Intelligence Artificielle (IA) - Abidjan",
+    "description": "Le rôle du  Spécialiste en Intelligence Artificielle  consiste à concevoir, développer et déployer des solutions innovantes en Machine Learning et Deep Learning, tout en intégrant l’IA dans les systèmes existants. Il participera à l’analyse de données, à l’identification d’opportunités d’automatisation et au pilotage de projets IA en lien avec les équipes métiers et IT. Il contribuera également à la veille technologique ainsi qu’à la formation des équipes internes.   Missions principales :     Développement et implémentation de solutions IA :   Concevoir et développer des modèles d’apprentissage automatique (Machine Learning) et d’apprentissage profond (Deep Learning)....",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/specialiste-ingenieur-intelligence-artificielle-ia-abidjan-1898067",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Olea recherche un Spécialiste en Intelligence Artificielle pour concevoir, développer et déployer des solutions innovantes en Machine Learning et Deep Learning. Ce rôle consiste à intégrer l'IA dans les systèmes existants et à participer à l'analyse de données. Le candidat idéal contribuera également à la veille technologique et à la formation des équipes internes.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.270Z",
+    "company": "Olea"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 41,
+  "fields": {
+    "title": "Social Media Manager - Abidjan",
+    "description": "CARREMENT WEB, c'est 8 ans de créativité et de stratégies digitales au cœur d'Abidjan. Nous sommes une agence de communication digitale passionnée qui aide les marques à briller et à construire des relations fortes avec leurs audiences. Notre carburant ? L'innovation, la collaboration et des résultats qui parlent d'eux-mêmes.  Nous recherchons un(e)  Social Media Manager  talentueux(se) pour prendre en charge la stratégie et l'animation des marques en gestion sur les réseaux sociaux. Vous serez responsable de la croissance des audiences, de l'engagement des communautés des marques.   Missions Principales :    Développement et exécution de la stratégie social media en accord avec les objectifs de l'...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/social-media-manager-abidjan-1898276",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'agence de communication digitale Carrement Web basée à Abidjan recherche un Social Media Manager pour gérer la stratégie et l'animation des marques sur les réseaux sociaux. Le candidat idéal devra être capable de travailler de manière innovante et collaborative pour obtenir des résultats tangibles. L'entreprise propose une opportunité de rejoindre une équipe passionnée et créative avec 8 ans d'expérience dans le domaine.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.275Z",
+    "company": "Carrement Web"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 42,
+  "fields": {
+    "title": "Offre de Stage : Webmaster (Front-End / Back-End) - Abidjan",
+    "description": "Nous recherchons un stagiaire talentueux et motivé pour rejoindre notre équipe en tant que Webmaster Front-End / Back-End.    Missions principales    Développement et maintenance d’applications web et mobiles  Participation à la conception et à l’implémentation de fonctionnalités front-end et back-end  Collaboration avec l’équipe technique pour optimiser les performances et l’expérience utilisateur",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/offre-stage-webmaster-front-end-back-end-abidjan-1898699",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Optinov recherche un stagiaire Webmaster pour développer et maintenir des applications web et mobiles à Abidjan. Le candidat aura pour mission de participer à la conception et à l'implémentation de fonctionnalités front-end et back-end. Il collaborera également avec l'équipe technique pour optimiser les performances et l'expérience utilisateur.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.285Z",
+    "company": "Optinov"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 43,
+  "fields": {
+    "title": "Stagiaire en Gestion Commerciale - Abidjan",
+    "description": "À propos de nous :   Ivoire Services Pro SARL, est une entreprise spécialisée dans la Formation et les Prestations de services.  Dans le cas de notre expansion nous recherchons trois  Stagiaires en Gestion Commerciale , et Informatiques (ou Secrétariat Bureautique)",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/stagiaire-gestion-commerciale-abidjan-1899654",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Ivoire Services Pro SARL recherche des stagiaires en Gestion Commerciale à Abidjan. L'entreprise spécialisée dans la formation et les prestations de services souhaite recruter trois stagiaires dans le cadre de son expansion. Les candidats en Gestion Commerciale, Informatiques ou Secrétariat Bureautique sont invités à postuler.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.291Z",
+    "company": "Ivoire Services Pro"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 44,
+  "fields": {
+    "title": "Content Manager - Afrique Francophone (H/F) - Abidjan",
+    "description": "À propos de North Star Network   North Star Network (NSN) est un groupe international de médias spécialisé dans le sport et les paris en ligne. Nous développons et opérons des marques digitales leaders qui connectent les passionnés de sport et les parieurs dans plus de 30 pays.  Notre mission est de transformer la passion pour le sport et le gaming en information fiable, analyses basées sur la donnée et divertissement responsable.  Entreprise internationale et entièrement remote, NSN rassemble plus de 50 collaborateurs internes et plus de 200 experts externes issus de plus de 20 nationalités à travers l’Europe, l’Afrique et les Amériques.  Dans le cadre du développement de notre Business Unit Afrique, nous...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/content-manager-afrique-francophone-hf-abidjan-1899746",
+    "salary": "",
+    "score": 8.0,
+    "summary": "",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.301Z",
+    "company": "North Star Network"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 45,
+  "fields": {
+    "title": "Technicien Fonctionnel Certifié ODOO - Abidjan",
+    "description": "Nous recherchons un profil Bac+2 certifié Odoo.V16, 17 ou 18",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/technicien-fonctionnel-certifie-odoo-abidjan-1899755",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Halltech Africa cherche un technicien fonctionnel certifié Odoo basé à Abidjan pour rejoindre leur équipe. Le candidat idéal devrait avoir une certification Odoo V16, 17 ou 18 et un diplôme Bac+2. L'entreprise est à la recherche d'un profil spécifique pour occuper ce poste.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.307Z",
+    "company": "Halltech Africa"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 46,
+  "fields": {
+    "title": "Gestionnaire de Paie - Abidjan",
+    "description": "Nous sommes à la recherche d'un  Gestionnaire de Paie.    Missions :    Collecte et traitement des éléments de paie  Recueillir les variables de paie (heures supplémentaires, absences, primes, congés, etc.)  Vérifier la conformité des informations (pointage, autorisations d’absence, etc.)  Intégrer les données dans le logiciel de paie  Établir les états de fin de Paie",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/gestionnaire-paie-abidjan-1899793",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Mainland Group Africa Holding recherche un Gestionnaire de Paie pour s'occuper de la collecte et du traitement des éléments de paie à Abidjan. Les missions incluent la collecte de variables de paie, la vérification de la conformité des informations et l'intégration des données dans le logiciel de paie. Le candidat retenu établira également les états de fin de paie.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.313Z",
+    "company": "Mainland Group Africa Holding"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 47,
+  "fields": {
+    "title": "Community Manager - Télétravail",
+    "description": "Nous recherchons un  Community Manager  talentueux et passionné spécialisé dans  la gestion et  l'animation des communautés en ligne d'une entreprise. Il développera et mettra en œuvre des stratégies de contenu sur les réseaux sociaux pour engager les utilisateurs, accroître la notoriété de la marque et favoriser les interactions.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/community-manager-teletravail-1899949",
+    "salary": "",
+    "score": 8.0,
+    "summary": "L'entreprise Palma Talents recherche un Community Manager pour gérer et animer des communautés en ligne. Le candidat idéal développera des stratégies de contenu pour les réseaux sociaux afin d'engager les utilisateurs et renforcer la notoriété de la marque. Le poste est proposé en télétravail.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.320Z",
+    "company": "Palma Talents"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 48,
+  "fields": {
+    "title": "Consultant(e) Junior Fundraising  - Abidjan",
+    "description": "Nous sommes à la recherche d'un(e)  Consultant(e) Junior Fundraising.    Missions :    Apporter un appui à la FSME pour recenser des donateurs à l’international.  Suite à la validation de la sélection de donateurs potentiels et des messages par la Fondation, établir le premier contact avec ces donateurs, et en cas de réponse positive, passer le relais à la chargée de la mobilisation de fonds à l’international.  Améliorer les supports de communication existants destinés aux donateurs grâce à l’Intelligence Artificielle et les traduire en anglais.  Rendre compte de l’avancée de ses travaux une fois par semaine aux membres du Conseil d’Administration de la Fondation.  Contacter la chargée de...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/consultante-junior-fundraising-abidjan-1900022",
+    "salary": "",
+    "score": 8.0,
+    "summary": "La Fondation Sainte-Marie Pour L'Education recherche un consultant junior en fundraising pour aider à recenser des donateurs à l'international et établir des contacts initiaux. Le consultant devra améliorer les supports de communication existants pour les donateurs. Le poste est basé à Abidjan.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.329Z",
+    "company": "Fondation Sainte-Marie Pour L'Education"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 49,
+  "fields": {
+    "title": "Agent de Sécurité - Abidjan",
+    "description": "Nous sommes à la recherche des  Agents de Sécurité.",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/agent-securite-abidjan-1900051",
+    "salary": "",
+    "score": 2.0,
+    "summary": "Le groupe Tropic Group Securyty est à la recherche d'agents de sécurité pour un poste à Abidjan. Le but est de renforcer leur équipe de sécurité. Les détails sur les responsabilités et les exigences ne sont pas spécifiés.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.339Z",
+    "company": "Tropic Group Securyty"
+  }
+},
+{
+  "model": "opportunities.opportunity",
+  "pk": 50,
+  "fields": {
+    "title": "Community Manager Stagiaire - Abidjan",
+    "description": "Nous recherchons un(e)  Community Manager Stagiaire pré‑emploi  motivé(e), doté(e) de compétences en  prospection commerciale en ligne  et en  création de contenu digital . Ce stage constitue une opportunité de pré‑emploi, avec possibilité d’intégration définitive selon les performances.   Missions principales     Prospecter et développer une clientèle en ligne (réseaux sociaux, plateformes digitales).    Créer et gérer du contenu attractif pour les réseaux sociaux et supports digitaux.    Animer les communautés en ligne et renforcer la visibilité de l’entreprise.    Collaborer avec l’équipe commerciale pour transformer les prospects en clients.    Assurer un reporting régulier sur les actions menées et les...",
+    "type": "emploi",
+    "country": "ci",
+    "category": null,
+    "source": 1,
+    "url": "https://www.emploi.ci/offre-emploi-cote-ivoire/community-manager-stagiaire-abidjan-1900063",
+    "salary": "",
+    "score": 8.0,
+    "summary": "Holly Trans Limited cherche un Community Manager Stagiaire pour développer sa clientèle en ligne et créer du contenu digital. Le stage offre une opportunité de pré-emploi avec possibilité d'intégration définitive en fonction des performances. Le candidat doit avoir des compétences en prospection commerciale en ligne et en création de contenu digital.",
+    "is_active": true,
+    "published_at": "2026-05-15T00:00:00Z",
+    "created_at": "2026-05-17T11:37:39.345Z",
+    "company": "Holly Trans Limited"
+  }
+}
+]

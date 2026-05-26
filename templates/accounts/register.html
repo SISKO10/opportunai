@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}Inscription - OPPORTUN'AI{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+
+        <!-- Logo et titre -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">🌍 OPPORTUN'AI</h1>
+            <p class="text-muted">
+                Créez votre compte gratuitement
+            </p>
+        </div>
+
+        <!-- Messages -->
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        {% endfor %}
+
+        <!-- Carte d'inscription -->
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-5">
+
+                <h3 class="fw-bold mb-4 text-center">
+                    <i class="bi bi-person-plus"></i> Inscription
+                </h3>
+
+                <form method="POST" action="/register/">
+                    {% csrf_token %}
+
+                    <!-- Nom d'utilisateur -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            <i class="bi bi-person"></i> Nom d'utilisateur
+                        </label>
+                        <input
+                            type="text"
+                            name="username"
+                            class="form-control form-control-lg"
+                            placeholder="Choisissez un nom d'utilisateur"
+                            required
+                        >
+                    </div>
+
+                    <!-- Mot de passe -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            <i class="bi bi-key"></i> Mot de passe
+                        </label>
+                        <input
+                            type="password"
+                            name="password1"
+                            class="form-control form-control-lg"
+                            placeholder="Choisissez un mot de passe"
+                            required
+                        >
+                    </div>
+
+                    <!-- Confirmation mot de passe -->
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">
+                            <i class="bi bi-key-fill"></i> Confirmer le mot de passe
+                        </label>
+                        <input
+                            type="password"
+                            name="password2"
+                            class="form-control form-control-lg"
+                            placeholder="Confirmez votre mot de passe"
+                            required
+                        >
+                    </div>
+
+                    <!-- Bouton inscription -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark btn-lg rounded-3">
+                            Créer mon compte →
+                        </button>
+                    </div>
+
+                </form>
+
+                <!-- Lien connexion -->
+                <div class="text-center mt-4">
+                    <p class="text-muted">
+                        Déjà un compte ?
+                        <a href="/login/" class="text-dark fw-bold">
+                            Se connecter
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

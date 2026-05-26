@@ -16,21 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from opportunities.urls import api_urlpatterns
 
 urlpatterns = [
-    # Interface admin Django
     path('admin/', admin.site.urls),
-
-    # Interface de test DRF
     path('api-auth/', include('rest_framework.urls')),
 
-    # Toutes nos URLs API
-    # prefixe "api/" devant chaque URL
-    path('api/', include('opportunities.urls')),
+    # URLs API
+    path('api/', include((api_urlpatterns, 'api'))),
 
-    # Dashboard (page d'accueil)
+    # URLs Web
     path('', include('dashboard.urls')),
-
-    #Opportunites (listes et detail)
     path('', include('opportunities.urls')),
+
+    # Authentification
+    path('', include('accounts.urls')),
 ]

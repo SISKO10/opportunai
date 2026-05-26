@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -153,7 +154,7 @@ class AlertCreateView(APIView):
         )
 
 
-
+@login_required(login_url='/login/')
 def opportunite_list(request):
     """
     Vue de la liste des opportunités
@@ -191,6 +192,8 @@ def opportunite_list(request):
     return render(request, 'opportunities/list.html', context)
 
 
+
+@login_required(login_url='/login/')
 def opportunite_detail(request, pk):
     """
     Vue du détail d'une opportunité

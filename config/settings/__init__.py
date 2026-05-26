@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'agents',
     'alerts',
     'dashboard',
+    #Authentification
+    'accounts',
+
 ]
 
 MIDDLEWARE = [
@@ -169,3 +172,9 @@ CELERY_BEAT_SCHEDULE = {
 
 #Cle api grop
 GROQ_API_KEY = config('GROQ_API_KEY')
+
+
+# Redirection après connexion
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
