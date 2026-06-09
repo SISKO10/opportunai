@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block title %}Mes Alertes - OPPORTUN'AI{% endblock %}
+
+{% block content %}
+
+<div class="row mt-4">
+
+    <!-- Formulaire création alerte -->
+    <div class="col-md-5 mb-4">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-4">
+
+                <h3 class="fw-bold mb-4">
+                    <i class="bi bi-bell-plus"></i> Nouvelle alerte
+                </h3>
+
+                <!-- Messages -->
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
+                    {{ message }}
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="alert"></button>
+                </div>
+                {% endfor %}
+
+                <form method="POST" action="/alertes/">
+                    {% csrf_token %}
+
+                    <!-- Mots clés -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            <i class="bi bi-search"></i> Mots clés
+                        </label>
+                        <input
+                            type="text"
+                            name="keywords"
+                            class="form-control form-control-lg"
+                            placeholder="Ex: developpeur python, comptable..."
+                            required
+                        >
+                        <small class="text-muted">
+                            Vous recevrez les opportunités contenant ces mots
+                        </small>
+                    </div>
+
+                    <!-- Type -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">
+                            <i class="bi bi-tag"></i> Type
+                        </label>
+                        <select name="type" class="form-select form-select-lg">
+                            <option value="">Tous les types</option>
+                            <option value="emploi">Emploi</option>
+                            <option value="business">Business</option>
+                            <option value="formation">Formation</option>
+                            <option value="appel_offre">Appel d'offre</option>
+                        </select>
+                    </div>
+
+                    <!-- Pays -->
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">
+                            <i class="bi bi-globe"></i> Pays
+                        </label>
+                        <select name="country" class="form-select form-select-lg">
+                            <option value="">Tous les pays</option>
+                            <option value="ci">Côte d'Ivoire</option>
+                            <option value="sn">Sénégal</option>
+                            <option value="ml">Mali</option>
+                            <option value="bf">Burkina Faso</option>
+                            <option value="gn">Guinée</option>
+                            <option value="cm">Cameroun</option>
+                        </select>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark btn-lg">
+                            <i class="bi bi-bell"></i> Créer l'alerte
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Liste des alertes -->
+    <div class="col-md-7">
+        <h3 class="fw-bold mb-4">
+            <i class="bi bi-bell"></i> Mes alertes
+            <span class="badge bg-secondary">
+                {{ mes_alertes.count }}
+            </span>
+        </h3>
+
+        {% for alerte in mes_alertes %}
+        <div class="card border-0 shadow-sm rounded-4 mb-3 p-3">
+            <div class="d-flex justify-content-between align-items-start">
+
+                <div>
+                    <!-- Mots clés -->
+                    <h5 class="fw-bold mb-1">
+                        <i class="bi bi-search"></i>
+                        {{ alerte.keywords }}
+                    </h5>
+
+                    <!-- Badges -->
+                    <div>
+                        {% if alerte.type %}
+                        <span class="badge bg-primary me-1">
+                            {{ alerte.get_type_display }}
+                        </span>
+                        {% else %}
+                        <span class="badge bg-secondary me-1">
+                            Tous les types
+                        </span>
+                        {% endif %}
+
+                        {% if alerte.country %}
+                        <span class="badge bg-info">
+                            {{ alerte.get_country_display }}
+                        </span>
+                        {% else %}
+                        <span class="badge bg-secondary">
+                            Tous les pays
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <small class="text-muted">
+                        Créée le {{ alerte.created_at|date:"d/m/Y" }}
+                    </small>
+                </div>
+
+                <!-- Bouton supprimer -->
+                <a href="/alertes/supprimer/{{ alerte.id }}/"
+                   class="btn btn-outline-danger btn-sm"
+                   onclick="return confirm('Supprimer cette alerte ?')">
+                    <i class="bi bi-trash"></i>
+                </a>
+
+            </div>
+        </div>
+
+        {% empty %}
+        <div class="text-center py-5">
+            <h5 class="text-muted">
+                😕 Vous n'avez pas encore d'alertes
+            </h5>
+            <p class="text-muted">
+                Créez une alerte pour recevoir les opportunités par email
+            </p>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}

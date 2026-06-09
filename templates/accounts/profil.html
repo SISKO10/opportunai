@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block title %}Mon Profil - OPPORTUN'AI{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+
+        <!-- En-tête profil -->
+        <div class="card shadow-lg border-0 rounded-4 mb-4">
+            <div class="card-body p-5">
+
+                <div class="d-flex align-items-center mb-4">
+
+                    <!-- Avatar -->
+                    <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-4"
+                         style="width:80px; height:80px; font-size:2rem;">
+                        {{ user.username|first|upper }}
+                    </div>
+
+                    <!-- Infos principales -->
+                    <div>
+                        <h2 class="fw-bold mb-0">
+                            {{ user.username }}
+                        </h2>
+                        <p class="text-muted mb-0">
+                            <i class="bi bi-envelope"></i>
+                            {{ user.email|default:"Email non renseigné" }}
+                        </p>
+                        <p class="text-muted mb-0">
+                            <i class="bi bi-calendar"></i>
+                            Membre depuis {{ user.date_joined|date:"d F Y" }}
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Bouton modifier -->
+                <a href="/profil/modifier/" class="btn btn-dark">
+                    <i class="bi bi-pencil"></i> Modifier mon profil
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Statistiques -->
+        <div class="row mb-4">
+
+            <div class="col-md-6 mb-3">
+                <div class="card border-0 shadow-sm rounded-4 p-4 text-center">
+                    <div style="font-size:2rem; font-weight:bold;">
+                        {{ nb_alertes }}
+                    </div>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-bell"></i> Alertes actives
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <div class="card border-0 shadow-sm rounded-4 p-4 text-center">
+                    <div style="font-size:2rem; font-weight:bold;">
+                        {{ user.date_joined|timesince }}
+                    </div>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-clock"></i> Ancienneté
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Informations détaillées -->
+        <div class="card border-0 shadow-sm rounded-4 p-4">
+            <h4 class="fw-bold mb-3">
+                <i class="bi bi-info-circle"></i> Informations
+            </h4>
+
+            <table class="table">
+                <tr>
+                    <td class="text-muted">Prénom</td>
+                    <td>{{ user.first_name|default:"Non renseigné" }}</td>
+                </tr>
+                <tr>
+                    <td class="text-muted">Nom</td>
+                    <td>{{ user.last_name|default:"Non renseigné" }}</td>
+                </tr>
+                <tr>
+                    <td class="text-muted">Email</td>
+                    <td>{{ user.email|default:"Non renseigné" }}</td>
+                </tr>
+                <tr>
+                    <td class="text-muted">Statut</td>
+                    <td>
+                        {% if user.is_staff %}
+                        <span class="badge bg-danger">Administrateur</span>
+                        {% else %}
+                        <span class="badge bg-success">Utilisateur</span>
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

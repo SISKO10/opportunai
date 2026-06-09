@@ -1,6 +1,7 @@
 import subprocess
 from celery import shared_task
 from opportunities.models import Opportunity
+from django.core.mail import send_mail
 from django.conf import settings
 from groq import Groq
 
@@ -113,3 +114,74 @@ def analyser_une_opportunite(opportunite_id):
 
     except Exception as e:
         return f"Erreur : {str(e)}"
+
+
+@shared_task
+def envoyer_alertes():
+    """
+    Tâche Celery qui envoie les meilleures
+    opportunités aux abonnés par email
+    Lancée automatiquement tous les jours à 8h
+    """
+
+    from opportunities.models import Alert, Opportunity
+
+    # On récupère toutes les alertes actives
+    alertes = Alert.objects.filter(is_active=True)
+
+    for alerte in alertes:
+
+        # On cherche les opportunités correspondantes
+        opportunites = Opportunity.objects.filter(
+            is_active=True,
+            score__gt=5  # score supérieur à 5
+        )
+
+        # Filtre par mots clés
+        if alerte.keywords:
+            opportunites = opportunites.filter(
+                title__icontains=alerte.keywords
+            )
+
+        # Filtre par pays
+        if alerte.country:
+            opportunites = opportunites.filter(
+                country=alerte.country
+            )
+
+        # Filtre par type
+        if alerte.type:
+            opportunites = opportunites.filter(
+                type=alerte.type
+            )
+
+        # On prend les 5 meilleures
+        opportunites = opportunites.order_by('-score')[:5]
+
+        # Si des opportunités correspondent
+        if opportunites.exists():
+
+            # On construit le message email
+            message = f"🌍 OPPORTUN'AI - Vos opportunités du jour\n\n"
+            message += f"Mots clés : {alerte.keywords}\n\n"
+            message += "─" * 40 + "\n\n"
+
+            for i, opp in enumerate(opportunites, 1):
+                message += f"{i}. {opp.title}\n"
+                if opp.company:
+                    message += f"   Entreprise : {opp.company}\n"
+                if opp.summary:
+                    message += f"   Résumé : {opp.summary}\n"
+                message += f"   Score : ⭐ {opp.score}/10\n"
+                message += f"   Voir l'offre : {opp.url}\n\n"
+
+            # On envoie l'email
+            send_mail(
+                subject=f"🌍 OPPORTUNAI - {opportunites.count()} opportunités pour vous !",
+                message=message,
+                from_email=settings.DEFAULT_FROM_EMAIL,
+                recipient_list=[alerte.email],
+                fail_silently=True,
+            )
+
+    return f"{alertes.count()} alertes traitées"

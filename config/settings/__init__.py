@@ -166,6 +166,13 @@ CELERY_BEAT_SCHEDULE = {
     'analyse-ia-toutes-les-6-heures': {
         'task': 'agents.tasks.analyser_opportunites',
         'schedule': crontab(minute=30, hour='*/6'),
+
+   },
+
+    # Envoi alertes tous les jours à 8h
+    'envoyer-alertes-tous-les-jours': {
+        'task': 'agents.tasks.envoyer_alertes',
+        'schedule': crontab(minute=0, hour=8),
     },
 }
 
@@ -178,3 +185,13 @@ GROQ_API_KEY = config('GROQ_API_KEY')
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
+
+
+# Configuration Email Gmail SMTP
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')

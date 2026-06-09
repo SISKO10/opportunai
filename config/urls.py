@@ -31,4 +31,8 @@ urlpatterns = [
 
     # Authentification
     path('', include('accounts.urls')),
+    
+    # Alerts
+    path('', include('alerts.urls')),
+
 ]
