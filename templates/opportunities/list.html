@@ -157,5 +157,66 @@
     </div>
     {% endfor %}
 </div>
+<!-- PAGINATION -->
+{% if page_obj.has_other_pages %}
+<div class="row mt-4">
+    <div class="col-12">
+        <nav aria-label="Pagination">
+            <ul class="pagination justify-content-center">
+
+                <!-- Bouton précédent -->
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?page={{ page_obj.previous_page_number }}{% if type_filtre %}&type={{ type_filtre }}{% endif %}{% if country_filtre %}&country={{ country_filtre }}{% endif %}{% if search %}&search={{ search }}{% endif %}">
+                        ← Précédent
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <span class="page-link">← Précédent</span>
+                </li>
+                {% endif %}
+
+                <!-- Numéros de pages -->
+                {% for num in page_obj.paginator.page_range %}
+                    {% if num == page_obj.number %}
+                    <li class="page-item active">
+                        <span class="page-link">{{ num }}</span>
+                    </li>
+                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                    <li class="page-item">
+                        <a class="page-link"
+                           href="?page={{ num }}{% if type_filtre %}&type={{ type_filtre }}{% endif %}{% if country_filtre %}&country={{ country_filtre }}{% endif %}{% if search %}&search={{ search }}{% endif %}">
+                            {{ num }}
+                        </a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+
+                <!-- Bouton suivant -->
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link"
+                       href="?page={{ page_obj.next_page_number }}{% if type_filtre %}&type={{ type_filtre }}{% endif %}{% if country_filtre %}&country={{ country_filtre }}{% endif %}{% if search %}&search={{ search }}{% endif %}">
+                        Suivant →
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <span class="page-link">Suivant →</span>
+                </li>
+                {% endif %}
+
+            </ul>
+
+            <p class="text-center text-muted">
+                Page {{ page_obj.number }} sur {{ page_obj.paginator.num_pages }}
+                ({{ total }} opportunités au total)
+            </p>
+        </nav>
+    </div>
+</div>
+{% endif %}
 
 {% endblock %}

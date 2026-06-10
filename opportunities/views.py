@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
 
@@ -158,40 +159,53 @@ class AlertCreateView(APIView):
 def opportunite_list(request):
     """
     Vue de la liste des opportunités
-    avec filtres par type et pays
+    avec filtres et pagination
     """
 
-    # On récupère toutes les opportunités actives
     opportunites = Opportunity.objects.filter(is_active=True)
 
-    # Filtre par type
+    # Filtres
     type_filtre = request.GET.get('type')
     if type_filtre:
         opportunites = opportunites.filter(type=type_filtre)
 
-    # Filtre par pays
     country_filtre = request.GET.get('country')
     if country_filtre:
         opportunites = opportunites.filter(country=country_filtre)
 
-    # Filtre par mot clé
     search = request.GET.get('search')
     if search:
         opportunites = opportunites.filter(
             title__icontains=search
         )
 
+    total = opportunites.count()
+
+    # ─────────────────────────────────────
+    # PAGINATION
+    # ─────────────────────────────────────
+
+    # On affiche 10 opportunités par page
+    paginator = Paginator(opportunites, 10)
+
+    # On récupère le numéro de page demandé
+    # Exemple : ?page=2
+    page_number = request.GET.get('page', 1)
+
+    # On récupère les opportunités de cette page
+    page_obj = paginator.get_page(page_number)
+
     context = {
-        'opportunites': opportunites,
-        'total': opportunites.count(),
+        'opportunites': page_obj,  # ← contient les 10 résultats de la page
+        'page_obj': page_obj,      # ← infos de pagination (page actuelle, total...)
+        'total': total,
         'type_filtre': type_filtre or '',
         'country_filtre': country_filtre or '',
         'search': search or '',
     }
 
     return render(request, 'opportunities/list.html', context)
-
-
+   
 
 @login_required(login_url='/login/')
 def opportunite_detail(request, pk):
