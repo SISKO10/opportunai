@@ -49,6 +49,41 @@
 
 </div>
 
+<!-- GRAPHIQUES -->
+<div class="row mb-5">
+
+    <!-- Graphique répartition par type -->
+    <div class="col-md-4 mb-3">
+        <div class="card carte-stat p-3">
+            <h5 class="fw-bold text-center mb-2">
+                📊 Répartition par type
+            </h5>
+            {{ graphique_type|safe }}
+        </div>
+    </div>
+
+    <!-- Graphique répartition par pays -->
+    <div class="col-md-4 mb-3">
+        <div class="card carte-stat p-3">
+            <h5 class="fw-bold text-center mb-2">
+                🌍 Répartition par pays
+            </h5>
+            {{ graphique_pays|safe }}
+        </div>
+    </div>
+
+    <!-- Graphique score moyen -->
+    <div class="col-md-4 mb-3">
+        <div class="card carte-stat p-3">
+            <h5 class="fw-bold text-center mb-2">
+                ⭐ Score moyen par type
+            </h5>
+            {{ graphique_score|safe }}
+        </div>
+    </div>
+
+</div>
+
 <!-- MEILLEURES OPPORTUNITÉS -->
 <div class="row mb-4">
     <div class="col-12">
